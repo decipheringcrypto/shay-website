@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 20px;
+}
+
+.nav-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00ff00;
+}
+
+/* Resume Section */
+.resume {
+    padding: 50px 20px;
+}
+
+.resume-container {
+    max-width: 750px;
+    margin: auto;
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(175, 175, 175, 0.3);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.resume-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.contact-info p a {
+    color: #ffffff;
+}
+
+h2 {
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.resume-section {
+    text-align: left;
+    padding: 10px;
+}
+
+.resume-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resume-section ul li {
+    background: #333;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Download Resume Button */
+.resume-download {
+    margin-top: 20px;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #929292;
+    color: #111;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.resume-button:hover {
+    background: #ffffff;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}

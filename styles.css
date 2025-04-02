@@ -52,6 +52,12 @@ h1 {
     text-shadow: 3px 3px 0px #d6d6d6;
 }
 
+header h2,
+.header-subtitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
 /* Navigation */
 .nav {
     display: flex;
@@ -356,8 +362,32 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
-      padding: 10px 5px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
     }
+
+    #profile-name {
+        font-size: 1.3rem;
+        word-break: break-word;
+        text-align: center;
+        padding: 0 10px;
+       margin-top: 40px;
+      }
+
+      header h2,
+        .header-subtitle {
+            font-size: 1rem;
+            margin-top: 10px;
+  }
+
+      .nav img {
+        width: 80px;
+        height: auto;
+        margin-top: 10px;
+      }
   
     .nav {
       flex-direction: column;
@@ -428,47 +458,14 @@ footer {
       width: 100%;
       height: auto;
     }
+   }
+  
+   @media (max-width: 480px) {
+    #profile-name {
+      font-size: 1.2rem;
+      word-break: break-word;
+      text-align: center;
+      padding: 10 10px;
+    }
   }
   
-
-
-/*@media (max-width: 768px) {
-    header {
-        height: auto;
-        padding: 20px;
-    }
-
-    .videocontainer {
-        grid-template-columns: 1fr;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .atari-button {
-        width: 100%;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .videocontainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bottles-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer {
-        font-size: 0.8rem;
-    }
-}
